@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/Night\ Sky.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  background-color: #000;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.container img {
+  width: 120px;
+}
+
+.content {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.content p {
+  font-size: 1.3rem;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+}
+
+.content h1 span {
+  color: rgb(224, 18, 87);
+}
+
+.countdown {
+  margin-top: 10px;
+  display: flex;
+  flex-basis: fill;
+}
+
+.countdown div {
+  padding-right: 20px;
+}
+
+.countdown div p {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.countdown div span {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.content button {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-size: 1rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.content button img {
+  width: 16px;
+  margin-left: 5px;
+}
+
+.rocket {
+  width: 200px;
+  position: absolute;
+  right: 100px;
+  bottom: 30px;
+  animation: anim 4s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 105%;
+  }
+}
+
+.links {
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1;
+}
+
+.links img {
+  width: 15px;
+  cursor: pointer;
+}
